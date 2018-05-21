@@ -1,9 +1,8 @@
 # CPP-Calendar
-It is a Calendar Program , written in c-plus-plus 
+A Calender Program based on Zeller's Algorithm written in C-plus-plus(C++).
 
-Zeller's Algorithm is Used;
-Displayed with 2d Array ;
+Calender is Displayed using Matrix/2-D arrays.
 
 My First Repository.
 
-Thankyou.....
+Thankyou...
