@@ -1,4 +1,7 @@
-#include<stdio.h>
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
 
 class calender{
 public :
@@ -111,7 +114,7 @@ printf("|___________");
 };
 
 
-int main()
+int main(void)
 {
     int date, month, year;
 printf("\nEnter Month(0 to show All) : ");
