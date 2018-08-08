@@ -4,6 +4,7 @@
 using namespace std;
 
 class calender{
+
 public :
     calender(int year)
     {
@@ -152,24 +153,65 @@ public :
                     else
                     {
                       calender[i][j-l]=lday;
-                      if(k==1){
-                        if(calender[i][j-l]%10==calender[i][j-l]){
-                if(j==7){ printf("|     %d     |", calender[i][j-l]);}
-            else     { printf("|     %d     ", calender[i][j-l]);}
-                }
-                else{
-                        if(j==7){ printf("|     %d    |", calender[i][j-l]);}
-                       else{ printf("|     %d    ", calender[i][j-l]);}
-                }
+                      if(k==1)
+                      {
+                        if(calender[i][j-l]%10==calender[i][j-l])
+                        {
+                            if(j==7)
+                            {
+                                printf("|     %d     |", calender[i][j-l]);
+                            }
+                            else 
+                            {
+                                printf("|     %d     ", calender[i][j-l]);
+                            }
+                        }
+                        else
+                        {
+                        if(j==7)
+                        {
+                            printf("|     %d    |", calender[i][j-l]);
+                        }
+                        else
+                        {
+                            printf("|     %d    ", calender[i][j-l]);
+                        }
+                        }
                 lday++;
-        if(lday>30&&(month==4||month==6||month==9||month==11)){flag=1;break;}
-         if(lday>31&&(month==1||month==3||month==5||month==7||month==8||month==10||month==12)){flag=1;break;}
-         else if(lday>28&&month==2){flag=1;break;}
+
+            if(lday>30&&(month==4||month==6||month==9||month==11))
+            {
+                flag=1;
+                break;
+            }
+            if(lday>31&&(month==1||month==3||month==5||month==7||month==8||month==10||month==12))
+            {
+                flag=1;break;
+            }
+            else if(lday>28&&month==2)
+            {
+                flag=1;break;
+            }
+            }
+            
+            else if(k==2)
+            {
+                if(j==7)
+                {
+                    printf("|___________|");
                 }
-                else if(k==2){if(j==7){printf("|___________|");}
-                       else {printf("|___________");}}
-                else {if(j==7){printf("|           |");}
-                        else printf("|           ");}
+                    else {
+                        printf("|___________");
+                        }
+            }
+                else 
+                {
+                    if(j==7)
+                    {
+                        printf("|           |");
+                    }
+                    else printf("|           ");
+                }
             }
             }
             printf("\n");
@@ -186,11 +228,15 @@ public :
 
 int main(void)
 {
-    int date, month, year;
-printf("\nEnter Month(0 to show All) : ");
-scanf("%d", &month);
-printf("\nEnter Year : ");
-scanf("%d", &year);
+
+int date, month, year;
+
+cout <<  endl << "Enter Month(0 to show All) : ";
+cin >> month;
+
+cout << endl << "Enter Year : ";
+cin >> year;
+
 if(month==0)
 {
     calender obj(year);
